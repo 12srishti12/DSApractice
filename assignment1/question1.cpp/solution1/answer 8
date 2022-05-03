@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-//ONLY INITIAL TWO TEST CONDITION IS CLEAR AFTER THAT ALL ARE FAILED
+
 using namespace std;
 
 int main(){
