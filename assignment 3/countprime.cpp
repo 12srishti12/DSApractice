@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-using namespace std; //SHOWS 5 OUTPUT FOR 10 INPUT
+using namespace std; 
 bool isprime(int n){
 	if (n==2 || n==3){
 		return 1;
@@ -18,6 +18,9 @@ bool isprime(int n){
 int main(){
 	int s,c=0,l;
 	cin>>s;
+	if(s<=2){
+		//for value less than or equal to two is zero
+	}
 	for(int i=2;i<=s;i++){
 		l=isprime(i);
 		if(l==1){
