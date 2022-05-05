@@ -8,11 +8,13 @@ void reverse_arr(int n){
 		A.push_back(p);
 	}
 	k=A.size();
-	k=k/2;
-	for(int i=0;i<k;i++){
-		for(int j=k;j<n;j++){
-			swap(A[i],A[j]);
-	}
+	
+	int i=0;
+	int j=k-1;
+	while(i<j){
+		swap(A[i],A[j]);
+		i++;
+		j--;
 	}
 	
 	for(int i=0;i<n;i++){
