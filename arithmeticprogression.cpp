@@ -5,7 +5,7 @@ void ap(int a,int n,int d){
 	int ar;
 	
 	S.push_back(a);
-	for(int i=a;i<n;i++){
+	for(int i=0;i<n;i++){
 		a=a+d;
 		S.push_back(a);
 	}
