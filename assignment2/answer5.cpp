@@ -10,12 +10,9 @@ bool isPrime(int n){
             if(n%i==0){
                 return 0;
             }
-            else{
-                return 1;
-            }
         }
+         return 1;
     }
-    return 1;
 }
 int main() {
     for(int i=1;i<30;i++){
