@@ -13,10 +13,15 @@ vector<int> mergesortedArrays(vector<int>a,vector<int>b){
 			c.push_back(b[j]);
 			j++;
 		}
-	//	else{
-	//		c.push_back(a[i]);
-	//		i++;
-	//	}
+		while(i<a.size()){
+			c.push_back(a[i]);
+                        i++;
+		}
+		while(j<b.size()){
+			c.push_back(b[j]);
+			j++;
+		}
+	
 	}
 	return c;
 }
