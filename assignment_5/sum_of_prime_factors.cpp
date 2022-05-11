@@ -6,7 +6,7 @@ int primefact=0;
 void sieve(){
     int max=2e5+5;
     vector<bool>isprime(max,1);
-    isprime[0]=0;
+    isprime[1]=0;
     for(int i=2;i<max;i++){
         if(!isprime[i]) continue;
         prime.push_back(i);
