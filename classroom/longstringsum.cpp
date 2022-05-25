@@ -19,7 +19,7 @@ int main() {
         j--;
     }
     if(carry>0){
-        sum=sum+k[c];
+        sum=sum+k[carry];
     }
 
     while(i>j){
