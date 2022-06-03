@@ -11,8 +11,6 @@
  */
 void printLinkedList(SinglyLinkedListNode* head) {
     SinglyLinkedListNode *temp;
-    int n;
-    cin>>n;
     temp=head;
     while(temp!=NULL){
         cout<<temp->data<<"\n";
