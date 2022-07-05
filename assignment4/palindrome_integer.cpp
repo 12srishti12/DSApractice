@@ -14,3 +14,19 @@ public:
         else return false;
         }
 };
+
+//shorter code below
+
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        long long y=x,r=0;
+        
+        while(x>0){
+            r=r*10+x%10;
+            x=x/10;
+        }
+        if(r==y) return true;
+        return false;
+    }
+};
