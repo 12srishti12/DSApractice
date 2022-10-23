@@ -5,16 +5,15 @@ int Solution::isPalindrome(string A) {
            A.erase(remove(A.begin(), A.end(), a), A.end());
        }
     }
-    cout<<A<<" ";
-    int h=sizeof(A)/2;
-    for(int i=0;i<h;i++){
+    int m=A.size()-1;
+    int n= A.size()/2;
+    int i=0, j=m;
+    while(i<n && j>=n){
         A[i]=tolower(A[i]);
-        cout<<A[i]<<" ";
-        for(int j=sizeof(A)-1;j>=h;j--){
-            A[j]=tolower(A[j]);
-            cout<<A[j]<<" ";
-            if(A[i]!=A[j]) return 0;
-        }
+        A[j]=tolower(A[j]);
+        if(A[i]!=A[j]) return 0;
+        i++;
+        j--;
     }
     return 1;
 }
